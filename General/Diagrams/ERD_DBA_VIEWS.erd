@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="ERD_DBA_VIEWS.erd">
+	<entities>
+		<data-source id="postgres-timescale-jdbc-178472d8882-3febf8f1cca586f1">
+			<entity id="1" name="dba_chunk_details" fq-name="public.dba_chunk_details" order="0" x="20" y="31">
+				<path name="public"/>
+				<path name="Pattyn"/>
+			</entity>
+			<entity id="2" name="dba_chunk_summary" fq-name="public.dba_chunk_summary" order="1" x="317" y="20">
+				<path name="public"/>
+				<path name="Pattyn"/>
+			</entity>
+			<entity id="3" name="dba_compression_summary" fq-name="public.dba_compression_summary" order="2" x="20" y="343">
+				<path name="public"/>
+				<path name="Pattyn"/>
+			</entity>
+			<entity id="4" name="dba_database_details" fq-name="public.dba_database_details" order="3" x="317" y="343">
+				<path name="public"/>
+				<path name="Pattyn"/>
+			</entity>
+			<entity id="5" name="dba_materialized_view_details" fq-name="public.dba_materialized_view_details" order="4" x="317" y="413">
+				<path name="public"/>
+				<path name="Pattyn"/>
+			</entity>
+			<entity id="6" name="dba_materialized_view_summary" fq-name="public.dba_materialized_view_summary" order="5" x="20" y="425">
+				<path name="public"/>
+				<path name="Pattyn"/>
+			</entity>
+			<entity id="7" name="dba_retention_summary" fq-name="public.dba_retention_summary" order="6" x="614" y="343">
+				<path name="public"/>
+				<path name="Pattyn"/>
+			</entity>
+			<entity id="8" name="dba_show_shemes" fq-name="public.dba_show_shemes" order="7" x="841" y="309">
+				<path name="public"/>
+				<path name="Pattyn"/>
+			</entity>
+			<entity id="9" name="dba_table_details" fq-name="public.dba_table_details" order="8" x="1042" y="274">
+				<path name="public"/>
+				<path name="Pattyn"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="vfk_dba_chunk_details_dba_chunk_summary" type="vfk" pk-ref="2" fk-ref="1"/>
+	</relations>
+</diagram>

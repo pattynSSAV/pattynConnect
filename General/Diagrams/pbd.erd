@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="pbd">
+	<entities>
+		<data-source id="postgres-timescale-jdbc-178472d8882-3febf8f1cca586f1">
+			<entity id="1" name="argocheck_datas_pbd" fq-name="pattyntestplcts.argocheck_datas_pbd">
+				<path name="pattyntestplcts"/>
+				<path name="Pattyn"/>
+			</entity>
+			<entity id="2" name="argocount_datas_pbd" fq-name="pattyntestplcts.argocount_datas_pbd">
+				<path name="pattyntestplcts"/>
+				<path name="Pattyn"/>
+			</entity>
+			<entity id="3" name="checkweigher_datas_pbd" fq-name="pattyntestplcts.checkweigher_datas_pbd">
+				<path name="pattyntestplcts"/>
+				<path name="Pattyn"/>
+			</entity>
+			<entity id="4" name="mec11_datas_pbd" fq-name="pattyntestplcts.mec11_datas_pbd">
+				<path name="pattyntestplcts"/>
+				<path name="Pattyn"/>
+			</entity>
+			<entity id="5" name="messages_default_pbd" fq-name="pattyntestplcts.messages_default_pbd">
+				<path name="pattyntestplcts"/>
+				<path name="Pattyn"/>
+			</entity>
+			<entity id="6" name="robot_datas_pbd" fq-name="pattyntestplcts.robot_datas_pbd">
+				<path name="pattyntestplcts"/>
+				<path name="Pattyn"/>
+			</entity>
+			<entity id="7" name="robot_general_datas_pbd" fq-name="pattyntestplcts.robot_general_datas_pbd">
+				<path name="pattyntestplcts"/>
+				<path name="Pattyn"/>
+			</entity>
+			<entity id="8" name="software_pbd" fq-name="pattyntestplcts.software_pbd">
+				<path name="pattyntestplcts"/>
+				<path name="Pattyn"/>
+			</entity>
+			<entity id="9" name="status_pbd" fq-name="pattyntestplcts.status_pbd">
+				<path name="pattyntestplcts"/>
+				<path name="Pattyn"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations/>
+</diagram>

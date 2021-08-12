@@ -1,0 +1,63 @@
+{
+	"72faa3a2-8f0d-4564-87a5-6f0181085ec7": {
+		"task": "pgDatabaseBackup",
+		"label": "Backup_Testplc_database",
+		"description": "Create backup from ppl testserver to local backup folder",
+		"createTime": "202102010834",
+		"updateTime": "202102010834",
+		"state": {
+			"project": "General",
+			"dataSource": "postgres-timescale-jdbc-176f697fd04-79c0bbb889460dc5",
+			"databaseObjects": [
+				"postgres-timescale-jdbc-176f697fd04-79c0bbb889460dc5/testplc"
+			],
+			"clientHomeName": "postgresql_client",
+			"export.outputFilePattern": "dump-${database}-${timestamp}.sql",
+			"export.outputFolder": "C:\\Users\\ssav\\Documents\\DOCKER\\TIMESCALEDB\\Backups",
+			"pg.format": "CUSTOM",
+			"pg.export.encoding": "UTF-8",
+			"pg.export.showViews": "false",
+			"pg.export.useInserts": "false",
+			"pg.export.noPrivileges": "false",
+			"pg.export.noOwner": "false",
+			"exportObjects": [
+				{
+					"database": "postgres-timescale-jdbc-176f697fd04-79c0bbb889460dc5/testplc",
+					"schemas": [
+						"public"
+					]
+				}
+			]
+		}
+	},
+	"49faf1ae-79fb-4cf9-a7ab-d30ffb615f01": {
+		"task": "pgDatabaseBackup",
+		"label": "Backup public",
+		"description": "",
+		"createTime": "202102010928",
+		"updateTime": "202102010928",
+		"state": {
+			"project": "General",
+			"dataSource": "postgres-timescale-jdbc-176f697fd04-79c0bbb889460dc5",
+			"databaseObjects": [
+				"postgres-timescale-jdbc-176f697fd04-79c0bbb889460dc5/testplc/public"
+			],
+			"clientHomeName": "postgresql_client",
+			"export.outputFilePattern": "dump-${database}-${timestamp}.sql",
+			"export.outputFolder": "C:\\Users\\ssav\\Documents\\DOCKER\\TIMESCALEDB\\Backups",
+			"pg.format": "PLAIN",
+			"pg.export.showViews": "true",
+			"pg.export.useInserts": "true",
+			"pg.export.noPrivileges": "false",
+			"pg.export.noOwner": "false",
+			"exportObjects": [
+				{
+					"database": "postgres-timescale-jdbc-176f697fd04-79c0bbb889460dc5/testplc",
+					"schemas": [
+						"public"
+					]
+				}
+			]
+		}
+	}
+}

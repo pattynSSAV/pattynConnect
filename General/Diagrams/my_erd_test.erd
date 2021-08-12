@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="my_erd_test.erd">
+	<entities>
+		<data-source id="postgres-timescale-jdbc-174a029c004-d7c41904b82b00b">
+			<entity id="1" name="generaltable" fq-name="company1.generaltable" order="0" x="195" y="215">
+				<path name="company1"/>
+				<path name="Test_PLC"/>
+			</entity>
+			<entity id="2" name="capturetranslations" fq-name="public.capturetranslations" order="1" color-bg="204,192,184" x="720" y="216">
+				<path name="public"/>
+				<path name="Test_PLC"/>
+			</entity>
+			<entity id="3" name="generaltable" fq-name="public.generaltable" order="2" color-bg="204,192,184" x="394" y="216">
+				<path name="public"/>
+				<path name="Test_PLC"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="vfk_generaltable_capturetranslations" type="vfk" pk-ref="2" fk-ref="3"/>
+	</relations>
+</diagram>

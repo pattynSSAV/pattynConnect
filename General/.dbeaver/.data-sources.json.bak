@@ -1,0 +1,509 @@
+{
+	"folders": {},
+	"connections": {
+		"postgres-timescale-jdbc-174a029c004-d7c41904b82b00b": {
+			"provider": "postgresql",
+			"driver": "postgres-timescale-jdbc",
+			"name": "postgres",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "postgres",
+				"url": "jdbc:postgresql://localhost:5432/postgres",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false",
+					"@dbeaver-show-unavailable-db@": "false"
+				},
+				"auth-model": "native"
+			},
+			"filters": [
+				{
+					"id": "public",
+					"type": "org.jkiss.dbeaver.ext.postgresql.model.PostgreProcedure",
+					"enabled": true,
+					"include": [
+						"%pattyn%"
+					]
+				},
+				{
+					"id": "Test_PLC:public",
+					"type": "org.jkiss.dbeaver.ext.postgresql.model.PostgreProcedure",
+					"enabled": true,
+					"include": [
+						"%pattyn%"
+					]
+				}
+			]
+		},
+		"postgres-timescale-jdbc-176f697fd04-79c0bbb889460dc5": {
+			"provider": "postgresql",
+			"driver": "postgres-timescale-jdbc",
+			"name": "Capture TestServer TestPLC root",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "10.10.8.129",
+				"port": "5432",
+				"database": "Pattyn",
+				"url": "jdbc:postgresql://10.10.8.129:5432/Pattyn",
+				"home": "postgresql_client",
+				"type": "dev",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "true",
+					"@dbeaver-show-unavailable-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false",
+					"@dbeaver-read-all-data-types-db@": "true"
+				},
+				"auth-model": "native",
+				"bootstrap": {
+					"defaultCatalog": "Pattyn",
+					"defaultSchema": "testcompanytimescalelowercase"
+				}
+			},
+			"filters": [
+				{
+					"id": "testplc:public",
+					"type": "org.jkiss.dbeaver.ext.postgresql.model.PostgreProcedure",
+					"enabled": true,
+					"include": [
+						"pattyn%"
+					]
+				},
+				{
+					"id": "Pattyn:public",
+					"type": "org.jkiss.dbeaver.ext.postgresql.model.PostgreProcedure",
+					"enabled": true,
+					"include": [
+						"pattyn%"
+					]
+				}
+			],
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-timescale-jdbc-177396cf487-6e20ee3ad0d0620": {
+			"provider": "postgresql",
+			"driver": "postgres-timescale-jdbc",
+			"name": "Test_PLC",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "Test_PLC",
+				"url": "jdbc:postgresql://localhost:5432/Test_PLC",
+				"home": "postgresql_client",
+				"type": "dev",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "true",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-timescale-jdbc-17844a24a70-7acfccef9bc0653f": {
+			"provider": "postgresql",
+			"driver": "postgres-timescale-jdbc",
+			"name": "Capture TestServer testcompany",
+			"description": "Capture created login",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "10.10.8.129",
+				"port": "5432",
+				"database": "Pattyn",
+				"url": "jdbc:postgresql://10.10.8.129:5432/Pattyn",
+				"home": "postgresql_client",
+				"type": "dev",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-timescale-jdbc-178472d8882-3febf8f1cca586f1": {
+			"provider": "postgresql",
+			"driver": "postgres-timescale-jdbc",
+			"name": "Capture TestServer PattynAdmin",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "10.10.8.129",
+				"port": "5432",
+				"database": "Pattyn",
+				"url": "jdbc:postgresql://10.10.8.129:5432/Pattyn",
+				"home": "postgresql_client",
+				"type": "dev",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"filters": [
+				{
+					"id": "Pattyn:\"Pattyn\"",
+					"type": "org.jkiss.dbeaver.ext.postgresql.model.PostgreSchema",
+					"enabled": true,
+					"include": [
+						"%test%",
+						"%public%",
+						"%ppl%"
+					]
+				},
+				{
+					"id": "Pattyn:public",
+					"type": "org.jkiss.dbeaver.ext.postgresql.model.PostgreProcedure",
+					"enabled": true,
+					"include": [
+						"%pattyn%",
+						"%test%",
+						"%pbd%",
+						"%count%"
+					]
+				}
+			],
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-timescale-jdbc-17a09140b17-9008f49183e3ac8": {
+			"provider": "postgresql",
+			"driver": "postgres-timescale-jdbc",
+			"name": "Capture Production root",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "10.20.10.14",
+				"port": "5432",
+				"database": "Pattyn",
+				"url": "jdbc:postgresql://10.20.10.14:5432/Pattyn",
+				"home": "postgresql_client",
+				"type": "prod",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-timescale-jdbc-17a092e9a82-61a0123d7fae7956": {
+			"provider": "postgresql",
+			"driver": "postgres-timescale-jdbc",
+			"name": "Capture Production PattyAdmin",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "10.20.10.14",
+				"port": "5432",
+				"database": "Pattyn",
+				"url": "jdbc:postgresql://10.20.10.14:5432/Pattyn",
+				"home": "postgresql_client",
+				"type": "prod",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"filters": [
+				{
+					"id": "Pattyn:public",
+					"type": "org.jkiss.dbeaver.ext.postgresql.model.PostgreProcedure",
+					"enabled": true,
+					"include": [
+						"%pattyn%",
+						"%dba%",
+						"%pbd%",
+						"%test%"
+					]
+				}
+			],
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"influxdb-17a5c98c5c1-5c37884e12b6005c": {
+			"provider": "influxdb",
+			"driver": "influxdb",
+			"name": "10.10.8.129",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "10.10.8.129",
+				"port": "8086",
+				"url": "http://10.10.8.129:8086/",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-influxdb.use.ssl": "false",
+					"influxdb.timeout.connect": "10000",
+					"influxdb.timeout.read": "60000",
+					"influxdb.timeout.write": "10000",
+					"@dbeaver-default.consistency.level@": "ONE"
+				},
+				"auth-model": "native"
+			}
+		},
+		"influxdb-17a5cb89b9f-1339e3107d93ba2b": {
+			"provider": "influxdb",
+			"driver": "influxdb",
+			"name": "TestPLC Influx Local",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "10.10.11.9",
+				"port": "8086",
+				"url": "http://10.10.11.9:8086/",
+				"type": "test",
+				"provider-properties": {
+					"@dbeaver-influxdb.use.ssl": "false",
+					"influxdb.timeout.connect": "10000",
+					"influxdb.timeout.read": "60000",
+					"influxdb.timeout.write": "10000",
+					"@dbeaver-default.consistency.level@": "ONE"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"influxdb-17a5d0a03fb-2be1b8acbbab271a": {
+			"provider": "influxdb",
+			"driver": "influxdb",
+			"name": "TestServer Influx",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "10.10.8.129",
+				"port": "8086",
+				"url": "http://10.10.8.129:8086/",
+				"type": "test",
+				"provider-properties": {
+					"@dbeaver-influxdb.use.ssl": "false",
+					"influxdb.timeout.connect": "10000",
+					"influxdb.timeout.read": "60000",
+					"influxdb.timeout.write": "10000",
+					"@dbeaver-default.consistency.level@": "ONE"
+				},
+				"auth-model": "native"
+			}
+		}
+	},
+	"virtual-models": {
+		"postgres-timescale-jdbc-174a029c004-d7c41904b82b00b": {
+			"PLCtest": {
+				"public": {
+					":Carton_Store": {
+						"properties": {
+							"erd.diagram.state": {
+								"serialized": "<diagram version=\"1\" name=\"Carton_Store\" time=\"202010081201\"><entities><data-source id=\"postgres-timescale-jdbc-174a029c004-d7c41904b82b00b\"><entity id=\"1\" name=\"Carton_Store\" fq-name=\"public.&quot;Carton_Store&quot;\" order=\"0\" color-bg=\"128,64,32\" border-width=\"3\" x=\"271\" y=\"44\"><path name=\"public\"/><path name=\"PLCtest\"/></entity><entity id=\"2\" name=\"_hyper_1_1_chunk\" fq-name=\"&quot;_timescaledb_internal&quot;.&quot;_hyper_1_1_chunk&quot;\" order=\"1\" color-bg=\"204,192,184\" x=\"20\" y=\"43\"><path name=\"_timescaledb_internal\"/><path name=\"PLCtest\"/></entity></data-source></entities><relations><relation name=\"&quot;_timescaledb_internal&quot;.&quot;_hyper_1_1_chunk&quot;-&gt;public.&quot;Carton_Store&quot;\" fq-name=\"&quot;_timescaledb_internal&quot;.&quot;_hyper_1_1_chunk&quot;.&quot;_timescaledb_internal&quot;.&quot;_hyper_1_1_chunk&quot;-&gt;public.&quot;Carton_Store&quot;\" type=\"inheritance\" pk-ref=\"1\" fk-ref=\"2\"/></relations></diagram>"
+							}
+						}
+					}
+				}
+			},
+			"withRecipeA": {
+				"public": {
+					":st_alarms": {
+						"properties": {
+							"erd.diagram.state": {
+								"serialized": "<diagram version=\"1\" name=\"st_alarms\" time=\"202010121551\"><entities><data-source id=\"postgres-timescale-jdbc-174a029c004-d7c41904b82b00b\"><entity id=\"1\" name=\"st_alarms\" fq-name=\"public.st_alarms\" order=\"0\" color-bg=\"128,64,32\" border-width=\"3\" x=\"357\" y=\"67\"><path name=\"public\"/><path name=\"withRecipeA\"/></entity></data-source></entities><relations/></diagram>"
+							}
+						}
+					}
+				}
+			},
+			"Test_PLC": {
+				"public": {
+					":generaltable": {
+						"properties": {
+							"erd.diagram.state": {
+								"serialized": "<diagram version=\"1\" name=\"generaltable\" time=\"202104291026\"><entities><data-source id=\"postgres-timescale-jdbc-174a029c004-d7c41904b82b00b\"><entity id=\"1\" name=\"generaltable\" fq-name=\"public.generaltable\" order=\"0\" color-bg=\"255,128,64\" x=\"20\" y=\"135\"><path name=\"public\"/><path name=\"Test_PLC\"/></entity><entity id=\"2\" name=\"capturetranslations\" fq-name=\"public.capturetranslations\" order=\"1\" x=\"348\" y=\"59\"><path name=\"public\"/><path name=\"Test_PLC\"/></entity></data-source></entities><relations><relation name=\"vfk_generaltable_capturetranslations\" type=\"vfk\" pk-ref=\"2\" fk-ref=\"1\"/></relations></diagram>"
+							}
+						},
+						"constraints": {
+							"generaltable_VK": {
+								"type": "vpk",
+								"attributes": [
+									"mytext"
+								]
+							}
+						},
+						"foreign-keys": [
+							{
+								"entity": "database://postgres-timescale-jdbc-174a029c004-d7c41904b82b00b/Test_PLC/org.jkiss.dbeaver.ext.postgresql.model.PostgreSchema/public/org.jkiss.dbeaver.ext.postgresql.model.PostgreTable/capturetranslations",
+								"constraint": "capturetranslations_VK",
+								"attributes": {
+									"mytext": "name"
+								}
+							}
+						]
+					},
+					":capturetranslations": {
+						"constraints": {
+							"capturetranslations_VK": {
+								"type": "vpk",
+								"attributes": [
+									"name"
+								]
+							}
+						}
+					}
+				}
+			}
+		},
+		"postgres-timescale-jdbc-176f697fd04-79c0bbb889460dc5": {
+			"testplc": {
+				"public": {
+					"@properties": {
+						"erd.diagram.state": {
+							"serialized": "<diagram version=\"1\" name=\"public\" time=\"202101260832\"><entities><data-source id=\"postgres-timescale-jdbc-176f697fd04-79c0bbb889460dc5\"><entity id=\"1\" name=\"alarms\" fq-name=\"public.alarms\" order=\"0\" x=\"190\" y=\"186\"><path name=\"public\"/><path name=\"testplc\"/></entity><entity id=\"2\" name=\"capturetranslations\" fq-name=\"public.capturetranslations\" order=\"1\" border-width=\"3\" x=\"13\" y=\"23\"><path name=\"public\"/><path name=\"testplc\"/></entity><entity id=\"3\" name=\"general\" fq-name=\"public.&quot;general&quot;\" order=\"2\" x=\"457\" y=\"186\"><path name=\"public\"/><path name=\"testplc\"/></entity><entity id=\"4\" name=\"module\" fq-name=\"public.&quot;module&quot;\" order=\"3\" x=\"449\" y=\"19\"><path name=\"public\"/><path name=\"testplc\"/></entity><entity id=\"5\" name=\"monitoring\" fq-name=\"public.monitoring\" order=\"4\" x=\"233\" y=\"20\"><path name=\"public\"/><path name=\"testplc\"/></entity><entity id=\"6\" name=\"objects\" fq-name=\"public.objects\" order=\"5\" x=\"614\" y=\"20\"><path name=\"public\"/><path name=\"testplc\"/></entity><entity id=\"7\" name=\"options\" fq-name=\"public.&quot;options&quot;\" order=\"6\" x=\"725\" y=\"185\"><path name=\"public\"/><path name=\"testplc\"/></entity><entity id=\"8\" name=\"parameters\" fq-name=\"public.parameters\" order=\"7\" x=\"726\" y=\"326\"><path name=\"public\"/><path name=\"testplc\"/></entity><entity id=\"9\" name=\"r\" fq-name=\"public.r\" order=\"8\" x=\"1097\" y=\"678\"><path name=\"public\"/><path name=\"testplc\"/></entity><entity id=\"10\" name=\"weightdata\" fq-name=\"public.weightdata\" order=\"9\" x=\"1150\" y=\"681\"><path name=\"public\"/><path name=\"testplc\"/></entity><entity id=\"11\" name=\"weightdata_v1\" fq-name=\"public.weightdata_v1\" order=\"10\" x=\"898\" y=\"190\"><path name=\"public\"/><path name=\"testplc\"/></entity><entity id=\"12\" name=\"xmlobject\" fq-name=\"public.xmlobject\" order=\"11\" x=\"784\" y=\"19\"><path name=\"public\"/><path name=\"testplc\"/></entity></data-source></entities><relations/></diagram>"
+						}
+					}
+				}
+			}
+		},
+		"postgres-timescale-jdbc-17844a24a70-7acfccef9bc0653f": {
+			"Pattyn": {
+				"pattyntestplcts": {
+					"@properties": {
+						"erd.diagram.state": {
+							"serialized": "<diagram version=\"1\" name=\"pattyntestplcts\" time=\"202106161639\"><entities><data-source id=\"postgres-timescale-jdbc-17844a24a70-7acfccef9bc0653f\"><entity id=\"1\" name=\"actorobjects\" fq-name=\"pattyntestplcts.actorobjects\" order=\"0\" x=\"1402\" y=\"1769\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"2\" name=\"alarms\" fq-name=\"pattyntestplcts.alarms\" order=\"1\" x=\"2138\" y=\"469\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"3\" name=\"argocheck_datas_pbd\" fq-name=\"pattyntestplcts.argocheck_datas_pbd\" order=\"2\" x=\"683\" y=\"2126\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"4\" name=\"argocount_datas_pbd\" fq-name=\"pattyntestplcts.argocount_datas_pbd\" order=\"3\" x=\"1781\" y=\"481\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"5\" name=\"checkweigher_datas_pbd\" fq-name=\"pattyntestplcts.checkweigher_datas_pbd\" order=\"4\" x=\"1402\" y=\"43\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"6\" name=\"general\" fq-name=\"pattyntestplcts.&quot;general&quot;\" order=\"5\" x=\"1015\" y=\"54\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"7\" name=\"mec11_datas_pbd\" fq-name=\"pattyntestplcts.mec11_datas_pbd\" order=\"6\" x=\"2581\" y=\"20\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"8\" name=\"messages_default_pbd\" fq-name=\"pattyntestplcts.messages_default_pbd\" order=\"7\" x=\"20\" y=\"2436\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"9\" name=\"module\" fq-name=\"pattyntestplcts.&quot;module&quot;\" order=\"8\" x=\"2138\" y=\"1091\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"10\" name=\"monitoring\" fq-name=\"pattyntestplcts.monitoring\" order=\"9\" x=\"1015\" y=\"527\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"11\" name=\"options\" fq-name=\"pattyntestplcts.&quot;options&quot;\" order=\"10\" x=\"683\" y=\"550\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"12\" name=\"parameters\" fq-name=\"pattyntestplcts.parameters\" order=\"11\" x=\"1402\" y=\"515\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"13\" name=\"pbd_argocheck_1\" fq-name=\"pattyntestplcts.pbd_argocheck_1\" order=\"12\" x=\"1781\" y=\"1355\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"14\" name=\"pbd_argocount_1\" fq-name=\"pattyntestplcts.pbd_argocount_1\" order=\"13\" x=\"355\" y=\"2287\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"15\" name=\"pbd_checkweigher_1\" fq-name=\"pattyntestplcts.pbd_checkweigher_1\" order=\"14\" x=\"2980\" y=\"20\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"16\" name=\"pbd_mec11_1\" fq-name=\"pattyntestplcts.pbd_mec11_1\" order=\"15\" x=\"20\" y=\"573\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"17\" name=\"pbd_robots_1\" fq-name=\"pattyntestplcts.pbd_robots_1\" order=\"16\" x=\"355\" y=\"573\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"18\" name=\"pbd_robots_general_1\" fq-name=\"pattyntestplcts.pbd_robots_general_1\" order=\"17\" x=\"683\" y=\"89\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"19\" name=\"robot_datas_pbd\" fq-name=\"pattyntestplcts.robot_datas_pbd\" order=\"18\" x=\"1781\" y=\"31\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"20\" name=\"robot_general_datas_pbd\" fq-name=\"pattyntestplcts.robot_general_datas_pbd\" order=\"19\" x=\"355\" y=\"100\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"21\" name=\"sensorobjects\" fq-name=\"pattyntestplcts.sensorobjects\" order=\"20\" x=\"1015\" y=\"2103\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"22\" name=\"software_pbd\" fq-name=\"pattyntestplcts.software_pbd\" order=\"21\" x=\"20\" y=\"135\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"23\" name=\"status_pbd\" fq-name=\"pattyntestplcts.status_pbd\" order=\"22\" x=\"2138\" y=\"31\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"24\" name=\"weightdata\" fq-name=\"pattyntestplcts.weightdata\" order=\"23\" x=\"2581\" y=\"446\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity><entity id=\"25\" name=\"weightdata_hourly\" fq-name=\"pattyntestplcts.weightdata_hourly\" order=\"24\" x=\"2980\" y=\"435\"><path name=\"pattyntestplcts\"/><path name=\"Pattyn\"/></entity></data-source></entities><relations/></diagram>"
+						}
+					}
+				}
+			}
+		},
+		"postgres-timescale-jdbc-178472d8882-3febf8f1cca586f1": {
+			"Pattyn": {
+				"public": {
+					":dba_chunk_details": {
+						"foreign-keys": [
+							{
+								"entity": "database://postgres-timescale-jdbc-178472d8882-3febf8f1cca586f1/Pattyn/org.jkiss.dbeaver.ext.postgresql.model.PostgreSchema/public/org.jkiss.dbeaver.ext.postgresql.model.PostgreView/dba_chunk_summary",
+								"constraint": "dba_chunk_summary_VK",
+								"attributes": {
+									"relscheme": "relscheme"
+								}
+							}
+						]
+					},
+					":dba_chunk_summary": {
+						"constraints": {
+							"dba_chunk_summary_VK": {
+								"type": "vpk",
+								"attributes": [
+									"relscheme"
+								]
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"saved-filters": [
+		{
+			"name": "PattynFunctions",
+			"enabled": true,
+			"include": [
+				"%pattyn%",
+				"%pbd%",
+				"%test%"
+			]
+		}
+	],
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		},
+		"prod": {
+			"name": "Production",
+			"color": "org.jkiss.dbeaver.color.connectionType.prod.background",
+			"description": "Production database",
+			"auto-commit": true,
+			"confirm-execute": true,
+			"confirm-data-change": true,
+			"auto-close-transactions": true
+		},
+		"test": {
+			"name": "Test",
+			"color": "org.jkiss.dbeaver.color.connectionType.qa.background",
+			"description": "Test (QA) database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": true,
+			"auto-close-transactions": false
+		}
+	}
+}
